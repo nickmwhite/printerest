@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root 'pages#home'
   get "about" => "pages#about" # creates the about path
   get "team" => "pages#team" # creates the team path
