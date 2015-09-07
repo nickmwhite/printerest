@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :pins
   devise_for :users
-  root 'pins#index'
+  root 'pins#home'
   get "about" => "pages#about" # creates the about path
   get "team" => "pages#team" # creates the team path
 
